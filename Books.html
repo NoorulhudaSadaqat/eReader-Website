@@ -1,0 +1,381 @@
+<doctypehtml!>
+<html>
+<head>
+	<title>Books
+	</title>
+		<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+	// Disable form submissions if there are invalid fields
+	(function() {
+	  'use strict';
+	  window.addEventListener('load', function() {
+		// Get the forms we want to add validation styles to
+		var forms = document.getElementsByClassName('needs-validation');
+		// Loop over them and prevent submission
+		var validation = Array.prototype.filter.call(forms, function(form) {
+		  form.addEventListener('submit', function(event) {
+			if (form.checkValidity() === false) {
+			  event.preventDefault();
+			  event.stopPropagation();
+			}
+			form.classList.add('was-validated');
+		  }, false);
+		});
+	  }, false);
+	})();
+	</script>
+  <style>
+.button {
+  background-color: #0000ff;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+.button:hover {
+  background-color: #1e90ff;
+}
+#books{
+ display:none;
+}
+#books2{
+ display:none;
+}
+#books3{
+ display:none;
+}
+</style>
+<script type="text/javascript">
+	var x=0;
+	function read()
+	{
+		if(x===0)
+		{
+			document.getElementById("books").style.display="inline";
+			document.getElementById("reads").innerHTML="Less";
+			x=1;
+		}
+		else
+		{
+			document.getElementById("books").style.display="none";
+			document.getElementById("reads").innerHTML="More";
+			x=0;
+		}
+	}
+		var x2=0;
+	function read2()
+	{
+		if(x2===0)
+		{
+			document.getElementById("books2").style.display="inline";
+			document.getElementById("reads2").innerHTML="Less";
+			x2=1;
+		}
+		else
+		{
+			document.getElementById("books2").style.display="none";
+			document.getElementById("reads2").innerHTML="More";
+			x2=0;
+		}
+	}
+		var x3=0;
+	function read3()
+	{
+		if(x3===0)
+		{
+			document.getElementById("books3").style.display="inline";
+			document.getElementById("reads3").innerHTML="Less";
+			x3=1;
+		}
+		else
+		{
+			document.getElementById("books3").style.display="none";
+			document.getElementById("reads3").innerHTML="More";
+			x3=0;
+		}
+	}
+</script>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<div class="container bg-muted" style="padding-top:20px;padding-bottom:20px">
+<h1 class="text-center">eReader Books</h1>
+ <p class="text-center"> Here you Go</p>
+</div>
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+	<span class="navbar-text"> eReaders</span>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+		<ul class="navbar-nav">
+			<li class="nav-item">
+				<a class="nav-link" href="homepage.html"> Home </a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link " href="#Books"> Books </a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#science"> Science </a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link " href="#technology"> technology</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link " href="#Novels"> Novels </a>
+			</li>
+		</ul>
+		<button type="button" class="btn btn-primary btn-sm" align="right"> Sign up</button>
+		</div>
+</nav>
+<div  id="science" class="container" style="padding-top:20px;padding-bottom:20px;margin-top:20px; background-color:#778899">
+<h2>Science</h2>
+ <div class="row">
+	<div class="col-sm-3">
+		<div class="card">
+			<img class="card-img-top" src="photos/book-1.jpg" alt="aiman picture" style="height:300px">
+			<div class="card-body">
+				<h4>INFINITE POWERS</h4>
+				<p> By Steven Strogatz</p>
+				<a href="#" class="btn btn-primary stretched-link"> Read </a>
+			</div>
+		</div>
+	</div>
+	<div class="col-sm-3">
+		<div class="card">
+			<img class="card-img-top" src="photos/book-2.jpg" alt="mahnoor picture" style="height:300px">
+			<div class="card-body">
+				<h4>BOTTLE OF LIES</h4>
+				<p> By katherine Eban</p>
+				<a href="#" class="btn btn-primary stretched-link"> Read </a>
+			</div>
+		</div>
+	</div>
+	<div class="col-sm-3">
+		<div class="card">
+			<img class="card-img-top" src="photos/book-3.jpg" alt="Noor picture" style="height:300px">
+			<div class="card-body">
+				<h5>THE DREAMT LAND</h5>
+				<p> By Mark Arax</p>
+				<a href="#" class="btn btn-primary stretched-link"> Read </a>
+			</div>
+		</div>
+	</div>
+	<div class="col-sm-3">
+		<div class="card">
+			<img class="card-img-top" src="photos/book-4.jpg" alt="Noor picture" style="height:300px">
+			<div class="card-body">
+				<h4>INVISIBLE WOMEN</h4>
+				<p>By carotine Criado Perez</p>
+				<a href="#" class="btn btn-primary stretched-link"> Read </a>
+			</div>
+		</div>
+	</div>
+</div>
+<br><br>
+<div id="books">
+ <div class="row">
+	<div class="col-sm-3">
+		<div class="card">
+			<img class="card-img-top" src="photos/book-5.jpg" alt="aiman picture" style="height:300px">
+			<div class="card-body">
+				<h6>MIDNIGHT IN CHERNOBYL</h6>
+				<p> By Adam Higginbotham</p>
+				<a href="#" class="btn btn-primary stretched-link">  Read </a>
+			</div>
+		</div>
+	</div>
+	<div class="col-sm-3">
+		<div class="card">
+			<img class="card-img-top" src="photos/book-6.jpg" alt="mahnoor picture" style="height:300px">
+			<div class="card-body">
+				<h6>THE MAN WHO SOLVED THE MARKET</h6>
+				<p> By Gregory Zuckerman</p>
+				<a href="#" class="btn btn-primary stretched-link">  Read </a>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<button class="button" id="reads" type="button" onclick="read()"> <b>More </b></button>
+</button>
+</div>
+<div  id="technology" class="container" style="padding-top:20px;padding-bottom:20px;margin-top:20px; background-color:#778899">
+ <h2>Technology</h2>
+ <div class="row">
+	<div class="col-sm-3">
+		<div class="card">
+			<img class="card-img-top" src="photos/book-7.jpg" alt="aiman picture" style="height:300px">
+			<div class="card-body">
+				<h5>DESIGNED FOR DIGITAL</h5>
+				<p> By Jeanne,Cyntha and Martin</p>
+				<a href="#" class="btn btn-primary stretched-link"> Read </a>
+			</div>
+		</div>
+	</div>
+	<div class="col-sm-3">
+		<div class="card">
+			<img class="card-img-top" src="photos/book-8.jpg" alt="mahnoor picture" style="height:300px">
+			<div class="card-body">
+				<h5>ARTIFICIAL INTELLIGENCE</h5>
+				<p> By Thomas H.Davernport </p>
+				<a href="#" class="btn btn-primary stretched-link"> Read </a>
+			</div>
+		</div>
+	</div>
+	<div class="col-sm-3">
+		<div class="card">
+			<img class="card-img-top" src="photos/book-9.jpg" alt="Noor picture" style="height:300px">
+			<div class="card-body">
+				<h5> SOONISH</h5>
+				<p> By kelly Weinersmith and Zach </p>
+				<a href="#" class="btn btn-primary stretched-link"> Read </a>
+			</div>
+		</div>
+	</div>
+	<div class="col-sm-3">
+		<div class="card">
+			<img class="card-img-top" src="photos/book-10.jpg" alt="Noor picture" style="height:300px">
+			<div class="card-body">
+				<h4>THE POWER OF EXPERIMENTS</h4>
+				<p>By Michael Luca and Max</p>
+				<a href="#" class="btn btn-primary stretched-link"> Read </a>
+			</div>
+		</div>
+	</div>
+</div>
+<br><br>
+<div id="books2">
+ <div class="row">
+	<div class="col-sm-3">
+		<div class="card">
+			<img class="card-img-top" src="photos/book-11.jpg" alt="aiman picture" style="height:300px">
+			<div class="card-body">
+				<h5> TOOLS AND WEAPONS </h5>
+				<p> By Brad smith, carol and Ann Brwone</p>
+				<a href="#" class="btn btn-primary stretched-link">  Read </a>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<button class="button" id="reads2" type="button" onclick="read2()"> <b>More </b></button>
+</button>
+</div>
+<div  id="Novels" class="container " style="padding-top:20px;padding-bottom:20px;margin-top:20px;  background-color:#778899">
+<h2>Novels</h2>
+ <div class="row">
+	<div class="col-sm-3">
+		<div class="card">
+			<img class="card-img-top" src="photos/book-12.jpg" alt="aiman picture" style="height:300px">
+			<div class="card-body">
+				<h5>THE GREAT GATSBY</h5>
+				<p> By f.scott fitzgerald</p>
+				<a href="#" class="btn btn-primary stretched-link"> Read </a>
+			</div>
+		</div>
+	</div>
+	<div class="col-sm-3">
+		<div class="card">
+			<img class="card-img-top" src="photos/book-13.jpg" alt="mahnoor picture" style="height:300px">
+			<div class="card-body">
+				<h4>LOLITA</h4>
+				<p> By Vladimir Nabokov</p>
+				<a href="#" class="btn btn-primary stretched-link"> Read </a>
+			</div>
+		</div>
+	</div>
+	<div class="col-sm-3">
+		<div class="card">
+			<img class="card-img-top" src="photos/book-14.jpg" alt="Noor picture" style="height:300px">
+			<div class="card-body">
+				<h5>THE SOUND OF FURY</h5>
+				<p> By William faulkner</p>
+				<a href="#" class="btn btn-primary stretched-link"> Read </a>
+			</div>
+		</div>
+	</div>
+	<div class="col-sm-3">
+		<div class="card">
+			<img class="card-img-top" src="photos/book-15.jpg" alt="Noor picture" style="height:300px">
+			<div class="card-body">
+				<h4>CATCH-22</h4>
+				<p>By Joseph heller</p>
+				<a href="#" class="btn btn-primary stretched-link"> Read </a>
+			</div>
+		</div>
+	</div>
+</div>
+<br><br>
+<div id="books3">
+ <div class="row">
+	<div class="col-sm-3">
+		<div class="card">
+			<img class="card-img-top" src="photos/book-16.jpg" alt="aiman picture" style="height:300px">
+			<div class="card-body">
+				<h6>HEMLET</h6>
+				<p> By William Shakespeare</p>
+				<a href="hemlet.html" class="btn btn-primary stretched-link">  Read </a>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<button class="button" id="reads3" type="button" onclick="read3()"> <b>More </b></button>
+</button>
+</div>
+<div class="container-fluid" style="background-color: black; color: dimgrey;">
+	<div class="row" style="padding-top: 20px; padding-bottom: 20px; margin-top: 30px; padding-left: 20px;">
+	  <div class="col-lg-4">
+		<h2> ABOUT SITE</h2>
+		<p> eReaders is an oppportunity for the people who loves reading. We provide you the books you love to read. There are 
+		  catogaries about books. if you want read books about science go to science catogary and same for technology and novels. </p>
+	  </div>
+	  <div class="col-lg-4">
+		<h2> CONTACT US </h2>
+		   <a href="#" class="fa fa-skype" style="font-size:20px;"> Skype</a><br><br>
+			<a href="#" class="fa fa-linkedin" style="font-size:20px;" > LinkedIn</a><br><br>
+		  
+			<a href="#" class="fa fa-twitter" style="font-size:20px;"> Twitter</a><br><br>
+		 
+			<a href="#" class="fa fa-facebook" style="font-size:20px;" > Facebook</a><br><br>
+			<a href="#" class="fa fa-instagram" style="font-size:20px;"> Instagram</a><br><br>
+	  </div>
+	  <div class="col-lg-4">
+		<h2> FEED BACK</h2>
+		<form class="needs-validation">
+		  <div class="form-group">
+			<label for="name">Email:</label>
+			<input type="text" class="form-control" id="email" placeholder="Enter Valid Email Address"  required>
+			<div class="valid-feedback">Valid.</div>
+			<div class="invalid-feedback">Please fill out this field.</div>
+		  </div>
+		  <div class="form-group">
+			<label for="comment">Comment:</label>
+			<textarea class="form-control" rows="2" id="comment" placeholder="Add a comment" name="text"></textarea>
+			<div class="valid-feedback">Valid.</div>
+			<div class="invalid-feedback">Please fill out this field.</div>
+		  </div>
+		  <div class="form-check">
+			<label class="form-check-label" for="check1">
+			  <input type="checkbox" class="form-check-input" id="check" name="update" value="something">Keep me updated
+			</label>
+		  </div>
+		  <button type="submit" class="btn btn-primary">Submit</button>
+		</form>
+	  </div>
+	</div>
+	</div>
+</body>
+</html>

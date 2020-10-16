@@ -1,0 +1,155 @@
+<doctypehtml!>
+<html>
+<head>
+<title>
+	Home 
+</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script>
+  $('.carousel').carousel({
+  interval: 2000
+})
+  </script>
+<script>
+// Disable form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Get the forms we want to add validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
+ 
+</head>
+<body>
+<div class="jumbotron">
+	<div class="container">
+	<h1 class="text-center"> Welcome to eReaders
+	</h1>
+	<p class="text-center">
+	We Provide you what you want
+	</p>
+	</div>
+</div>
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+	<span class="navbar-text"> eReaders</span>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+		<ul class="navbar-nav">
+			<li class="nav-item">
+				<a class="nav-link active" href="#"> Home </a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="Books.html"> Books </a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#"> Articles </a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="Aboutme.html"> About me</a>
+			</li>
+		</ul>
+		<button type="button" class="btn btn-primary btn-sm" > Sign up</button>
+		</div>
+</nav>
+<div class="container">
+<div id="demo" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block img-fluid" src="photos/img_1.jpg" alt="Los Angeles">
+      <div class="carousel-caption">
+        <h3>eReaders</h3>
+        <p>Books For Everyone</p>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img class="d-block img-fluid"  src="photos/img_2.jpg" alt="Chicago">
+      <div class="carousel-caption">
+        <h3>eReaders</h3>
+        <p>Books For Everyone</p>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img  class="d-block img-fluid" src="photos/img_3.jpg" alt="New York">
+      <div class="carousel-caption">
+        <h3>eReaders</h3>
+        <p>Books For Everyone</p>
+      </div>   
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+</div>
+<div class="container-fluid" style="background-color: black; color: dimgrey;">
+<div class="row" style="padding-top: 20px; padding-bottom: 20px; margin-top: 30px; padding-left: 20px;">
+  <div class="col-lg-4">
+    <h2> ABOUT SITE</h2>
+    <p> eReaders is an oppportunity for the people who loves reading. We provide you the books you love to read. There are 
+      catogaries about books. if you want read books about science go to science catogary and same for technology and novels. </p>
+  </div>
+  <div class="col-lg-4">
+    <h2> CONTACT US </h2>
+       <a href="#" class="fa fa-skype" style="font-size:20px;"> Skype</a><br><br>
+        <a href="#" class="fa fa-linkedin" style="font-size:20px;" > LinkedIn</a><br><br>
+      
+        <a href="#" class="fa fa-twitter" style="font-size:20px;"> Twitter</a><br><br>
+     
+        <a href="#" class="fa fa-facebook" style="font-size:20px;" > Facebook</a><br><br>
+        <a href="#" class="fa fa-instagram" style="font-size:20px;"> Instagram</a><br><br>
+  </div>
+  <div class="col-lg-4">
+    <h2> FEED BACK</h2>
+    <form class="needs-validation">
+      <div class="form-group">
+        <label for="name">Email:</label>
+        <input type="text" class="form-control" id="email" placeholder="Enter Valid Email Address"  required>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div>
+      </div>
+      <div class="form-group">
+        <label for="comment">Comment:</label>
+        <textarea class="form-control" rows="2" id="comment" placeholder="Add a comment" name="text"></textarea>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div>
+      </div>
+      <div class="form-check">
+        <label class="form-check-label" for="check1">
+          <input type="checkbox" class="form-check-input" id="check" name="update" value="something">Keep me updated
+        </label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+</div>
+</div>
+</body>
+</html>
